@@ -1,8 +1,7 @@
 {
   "extends": [
-    "react-app",
     "airbnb",
-    "react-app/jest"
+    "prettier"
   ],
   "rules": {
     "react/jsx-filename-extension": [
@@ -11,9 +10,10 @@
         ".js"
         ] 
       }
-    ]
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    }
   }
 }
