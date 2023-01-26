@@ -3,5 +3,17 @@
     "react-app",
     "airbnb",
     "react-app/jest"
-  ]
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [
+        ".js"
+        ] 
+      }
+    ]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
