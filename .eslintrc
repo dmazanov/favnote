@@ -3,17 +3,18 @@
     "airbnb",
     "prettier"
   ],
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "document": true
+  },
   "rules": {
     "react/jsx-filename-extension": [
       1,
-      { "extensions": [
-        ".js"
-        ] 
+      { 
+        "extensions": [".js"] 
       }
-    ],
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
-    }
+    ]
   }
 }
