@@ -1,7 +1,8 @@
 {
   "extends": [
     "airbnb",
-    "prettier"
+    "prettier",
+    "plugin:import/errors", "plugin:import/warnings"
   ],
   "env": {
     "jest": true
@@ -16,5 +17,12 @@
         "extensions": [".js"] 
       }
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
   }
 }
