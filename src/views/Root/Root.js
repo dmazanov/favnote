@@ -5,7 +5,8 @@ function Root() {
   return (
     <div>
       <h1>Hello world!</h1>
-      <Button> Test Button</Button>
+      <Button>Close / Save</Button>
+      <Button secondary>Remove</Button>
     </div>
   );
 }
