@@ -1,17 +1,26 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   display: inline-block;
-  min-width: ${({ secondary }) => (secondary ? '105px' : '220px')};
-  height: ${({ secondary }) => (secondary ? '30px' : '47px')};
+  min-width: ${({ width }) => width || '220px'};
+  height: 47px;
   padding: 0;
   border: none;
   border-radius: 50px;
-  background-color: ${({ secondary }) => (secondary ? '#e6e6e6' : '#ffd82b')};
+  background-color: #ffd82b;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: ${({ secondary }) => (secondary ? '10px' : '16px')};
+  font-size: 16px;
   text-transform: uppercase;
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      min-width: 105px;
+      height: 30px;
+      font-size: 10px;
+      background-color: #e6e6e6;
+    `}
 `;
 
 export default Button;
